@@ -15,19 +15,55 @@
  
 ### `QueryWrapper<T>`与`UpdateWrapper<T>`共有方法
 
-方法名           |     	说明
----------------- | ----------------
-allEq            |      基于 map 内容等于=
+方法名 | 说明
+--------|--------
+allEq       |   基于 map 内容等于=
+eq          |   等于 =
+ne          |   不等于 <>
+gt          |   大于 >
+ge          |   大于等于 >=
+lt          |   小于 <
+le          |   小于等于 <=
+between     |   BETWEEN 条件语句
+notBetween  |   NOT BETWEEN 条件语句
+like        |   LIKE '%值%''
+notLike     |   NOT LIKE '%值%'
+likeLeft    |   LIKE '%值'
+likeRight   |   LIKE '值%'
+--------|--------
+isNull      |   NULL 值查询
+isNotNull   |   NOT NULL 值查询
+in          |   IN 查询
+notIn       |   NOT IN 查询
+inSql       |   IN 查询(sql注入式)
+notInSql    |   NOT IN 查询(sql注入式)
+groupBy     |   分组 GROUP BY  
+orderByAsc  |   ASC 排序 ORDER BY
+orderByDesc |   DESC 排序 ORDER BY
+orderBy     |   排序 ORDER BY
+having      |   HAVING 关键词(sql注入式)
+--------|--------
+or          |   or 拼接
+apply       |   拼接自定义内容(sql注入式)
+last        |   拼接在最后(sql注入式)
+exists      |   EXISTS 条件语句(sql注入式)
+notExists   |   NOT EXISTS 条件语句(sql注入式)
+--------|--------
+and(Function)   |   AND (嵌套内容)
+or(Function)    |   OR  (嵌套内容)
+nested(Function)|   (嵌套内容)
+
 
 
 #### `QueryWrapper<T>`特有方法
 
-方法名           |     	说明
----------------- | ----------------
+方法名 | 说明
+---|---
+select  |   SQL 查询字段内容,例如:id,name,age
 
 
 #### `UpdateWrapper<T>`特有方法
 
-方法名           |     	说明
----------------- | ----------------
-
+方法名 | 说明
+---|---
+set     |   SQL SET 字段
