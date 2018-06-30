@@ -59,11 +59,26 @@ nested(Function)|   (嵌套内容)
 
 方法名 | 说明
 ---|---
-select  |   SQL 查询字段内容,例如:id,name,age
+select  |   SQL 查询字段内容,例如:id,name,age(重复设置以最后一次为准)
 
 
 #### `UpdateWrapper<T>`特有方法
 
 方法名 | 说明
 ---|---
-set     |   SQL SET 字段
+set     |   SQL SET 字段(一个字段使用一次)
+
+
+### 分页查询
+
+```java
+IPage<T> selectPage(IPage<T> page, @Param("ew") Wrapper<T> queryWrapper);
+```
+
+> 以上面的方法为例,入参一个`IPage<T>`接口的子类(可以使用mp自带的一个叫`Page<T>`的子类),
+返回一个`IPage<T>`,其实这个`返回的分页类==入参的分页类`,
+如果你需要自定义一个分页方法只需要注意一点:入参第一位放置你使用的`IPage<T>`子类!
+
+### `update(T entity, Wrapper<T> updateWrapper)`使用
+
+> 只需要注意,入参第一位是需要update的实体类,`updateWrapper`里的实体类是用于生成where条件的
