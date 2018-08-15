@@ -24,7 +24,7 @@ Maven：
 Gradle：
 
 ```groovy
-compile group: 'com.baomidou', name: 'mybatis-plus-boot-starter', version: '3.0-RC'
+compile group: 'com.baomidou', name: 'mybatis-plus-boot-starter', version: '3.0-RC3.1-SNAPSHOT'
 ```
 
 ## Spring MVC
@@ -42,7 +42,7 @@ Maven:
 Gradle：
 
 ```groovy
-compile group: 'com.baomidou', name: 'mybatis-plus', version: '3.0-RC'
+compile group: 'com.baomidou', name: 'mybatis-plus', version: '3.0-RC3.1-SNAPSHOT'
 ```
 
 ---
