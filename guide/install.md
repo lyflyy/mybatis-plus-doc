@@ -17,7 +17,7 @@ Maven：
 <dependency>
     <groupId>com.baomidou</groupId>
     <artifactId>mybatis-plus-boot-starter</artifactId>
-    <version>3.0-RC</version>
+    <version>3.0-RC3.1-SNAPSHOT</version>
 </dependency>
 ```
 
@@ -35,7 +35,7 @@ Maven:
 <dependency>
     <groupId>com.baomidou</groupId>
     <artifactId>mybatis-plus</artifactId>
-    <version>3.0-RC</version>
+    <version>3.0-RC3.1-SNAPSHOT</version>
 </dependency>
 ```
 
