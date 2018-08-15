@@ -29,7 +29,7 @@ module.exports = {
             link: "/faq/"
           },
           {
-            text: "选择语音",
+            text: "选择语言",
             items: [{ text: "简体中文", link: "/" }]
           },
           {
